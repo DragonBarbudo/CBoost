@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+   background: linear-gradient(#FFD398, #FF9403);
+   border-top: 2px solid #4AB218;
+   a.navbar-item {
+       font-size:0.9rem;
+       color: #fff;
+       font-weight: 600;
+       &:hover, &:focus, &:active, &.active{
+           color: #2C8105;
+           background: transparent;
+       }
+   }
+}
+
+header {
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0 80px 0;
+    overflow: hidden;
+    .permiso {
+        margin: 60px 20px 0 20px;
+        strong { color:#fff; }
+        color: #fff;
+    }
+
+    .headproducts {
+        padding: 60px 0;
+        position: relative;
+        .pr { position: absolute; }
+        .pr:nth-child(1) {
+            left: 12%; bottom: 15%;
+            width: 30%;
+            z-index: 4; 
+        }
+        .pr:nth-child(2) {
+            left: 31%; bottom: 13%;
+            width: 30%;
+            z-index: 3; 
+        }
+        .pr:nth-child(3) {
+            right: 24%; bottom: 22%;
+            width: 21%;
+            z-index: 2;
+        }
+        .pr:nth-child(4) {
+            right: 10%; bottom: 23%;
+            width: 17%;
+            z-index: 1;
+        }
+    }
+
+}
+#productos{
+    h3, p {color: #165B00;}
+}
+.productos {
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.productbann {
+    padding: 60px 0;
+    position: relative;
+    height: 340px;
+    @media(min-width:1200px) {
+        height: 520px;
+    }
+    .pr { position: absolute; }
+    .pr:nth-child(1) {
+        z-index: 2; 
+    }
+    .pr:nth-child(2) {
+        z-index: 1; 
+    }
+}
+
+.pleca {
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 80px;
+    margin-bottom: 0 !important;
+    width: 100%;
+    div { height: 30px; }
+    div:nth-child(1) { background: #FEE330; }
+    div:nth-child(2) { background: #FFB138; }
+    div:nth-child(3) { background: #FF9400; }
+}
+
+#donde {
+    h3 {
+        background: #6EC047;
+        color:#fff;
+        padding: 10px;
+    }
+    img {
+        max-width: 100px;
+        margin: 10px 0;
+    }
+}
+
+
+#gallery {
+    overflow: hidden;
+    .columns {
+        width: 110%;
+        margin-left: -5%;
+    }
+    .column {
+        margin: 0px 4px;
+    }
+}
+
+
+
+footer {
+    padding: 10px;
+    color:#fff;
+    background: #6EC047;
+}
+
+
+#vitaminac, .productos, #donde {
+    padding-top: 80px;
+}
+
+
+.navbar-burger {
+    color:#4BB318;
+    span {
+        height: 3px;
+    }
+    &:hover {
+        background: #4BB318;
+        color:#fff;
+    }
+}
+@media screen and (max-width: 1023px){
+    .navbar-menu {
+        background: #FF9400;
+    }
+}
+
+
+.mt { margin-top: 40px; }
+.mb { margin-bottom: 40px; }

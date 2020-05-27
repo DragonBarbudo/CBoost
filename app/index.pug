@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Cboost | La C de todos los días
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css")
+        link(rel="stylesheet", href="https://unpkg.com/aos@2.3.1/dist/aos.css")
+        link(rel="stylesheet", href="app/app.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css")
+    body
+        div#fb-root
+        script(async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=101945399896351&autoLogAppEvents=1")
+        nav.navbar.is-fixed-top
+            .container
+                .navbar-brand
+                    a(href="#").navbar-item: img(src="app/img/cboost.png", alt="Cboost")
+                    a.navbar-burger.burger(data-target="navMenu")
+                        span
+                        span
+                        span
+                .navbar-menu#navMenu
+                    .navbar-end
+                        a(href="#vitaminac").navbar-item.sectionbtn VITAMINA C
+                        a(href="#productos").navbar-item.sectionbtn PRODUCTOS
+                        a(href="#donde").navbar-item.sectionbtn DÓNDE ENCONTRARLO
+        header
+            .container
+                img(src="app/img/lacdetodoslosdias.png", alt="La C de todos los días" data-aos="fade" data-aos-duration="1000")
+                div.headproducts
+                    img(src="app/img/cboost-vitamina-c-30.png", alt="Productos Cboost" data-aos="slide-right" data-aos-easing="ease-in-out" data-aos-duration="800").pr
+                    img(src="app/img/cboost-vitamina-c-10.png", alt="Productos Cboost" data-aos="slide-right" data-aos-easing="ease-in-out" data-aos-duration="500").pr
+                    img(src="app/img/cboost-kids.png", alt="Productos Cboost" data-aos="slide-left" data-aos-easing="ease-in-out" data-aos-duration="500").pr
+                    img(src="app/img/cboost-multivitaminas.png", alt="Productos Cboost" data-aos="slide-left" data-aos-easing="ease-in-out" data-aos-duration="800").pr
+                    img(src="app/img/head.png", alt="Productos Cboost" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="400" data-aos-duration="2000")
+                .columns.permiso
+                    .column.has-text-centered
+                        p.is-size-7.has-text-weight-bold Permiso de publicidad: 1933002T1A0285
+                        p.is-size-7.has-text-weight-semibold
+                            | No use en menores a los 12 años. Este producto no es un medicamento. El consumo de este producto es responsabilidad de quien lo recomienda y de quien lo usa.
+                            | No debe utilizarse como sustituto en una alimentación balanceada. Aliméntate sanamente. Sólo el producto C-boost Polvos Efervescentes no contienen azúcar y C-boost Gummies Sí contiene azúcar.
+        section.section#vitaminac
+            .columns.is-vcentered
+                .column.is-6.is-offset-1.has-text-centered
+                    h2.is-size-2.has-text-weight-bold.mt.mb VITAMINA C
+                    p La vitamina C, también conocida como vitamina antiescirbútica o ácido ascórbico, es una vitamina hidrosoluble imprescindible para el desarrollo, crecimiento y buena salud de nuestro cuerpo.
+                    p.has-text-weight-semibold.mt Cboost es la línea de productos saludables con Vitamina C, que ayudan a mejorar el funcionamiento del organismo, es una marca que fomenta la cultura de prevención.
+                .column.is-3.is-offset-1.has-text-centered.mt
+                    img(src="app/img/vitaminac.png", alt="Vitamina C" data-aos="fade-up" data-aos-duration="2000")
+        .columns.pleca
+            .column.is-3(data-aos="slide-left")
+            .column.is-3(data-aos="slide-left")
+            .column(data-aos="slide-right")
+        #productos(data-aos="fade-up" data-aos-id="productos")
+            section.productos#polvos(style="background-image: url(app/img/bg-efervescentes.jpg)")
+                .section.container
+                    .columns: .column.has-text-centered
+                        h3.is-size-4.has-text-weight-bold POLVOS EFERVESCENTES DE MANDARINA
+                        p Presentación: Caja con 10 sobres y Caja con 30 sobres
+                    .columns: .column.is-8.is-offset-2
+                        .productbann
+                            img(src="app/img/cboost-vitamina-c-30.png", alt="Productos Cboost" data-aos="slide-right" data-aos-easing="ease-in-out" data-aos-duration="500" style="width: 50%; bottom: 2%; right:40%").pr
+                            img(src="app/img/cboost-vitamina-c-10.png", alt="Productos Cboost" data-aos="slide-left" data-aos-easing="ease-in-out" data-aos-duration="300" style="width: 50%; bottom: 0%; left:44%;" ).pr
+            section.productos#gummies(style="background-image: url(app/img/bg-multivitaminas.jpg)")
+                .section.container
+                    .columns: .column.has-text-centered
+                        h3.is-size-4.has-text-weight-bold GUMMIES MULTIVITAMINAS & MINERALES
+                        p Presentación: Frasco con 90 gomitas y Frasco con 180 gomitas
+                    .columns: .column.is-8.is-offset-2
+                        .productbann
+                            img(src="app/img/cboost-multivitaminas.png", alt="Productos Cboost" data-aos="slide-right" data-aos-easing="ease-in-out" data-aos-duration="500" style="width: 30%; top: 0%; right:48%").pr
+                            img(src="app/img/cboost-multivitaminas.png", alt="Productos Cboost" data-aos="slide-left" data-aos-easing="ease-in-out" data-aos-duration="300" style="width: 28%; top: 4%; left:48%;" ).pr
+            section.productos#kids(style="background-image: url(app/img/bg-kids.jpg)")
+                .section.container
+                    .columns: .column.has-text-centered
+                        h3.is-size-4.has-text-weight-bold GUMMIES KIDS VITAMINA C
+                        p Presentación: Frasco con 90 gomitas y Frasco con 180 gomitas
+                    .columns: .column.is-8.is-offset-2
+                        .productbann
+                            img(src="app/img/cboost-kids.png", alt="Productos Cboost" data-aos="slide-right" data-aos-easing="ease-in-out" data-aos-duration="500" style="width: 40%; top: 0%; right:42%").pr
+                            img(src="app/img/cboost-kids.png", alt="Productos Cboost" data-aos="slide-left" data-aos-easing="ease-in-out" data-aos-duration="300" style="width: 35%; top: 8%; left:45%;" ).pr
+        section#donde.section
+            .container
+                .columns
+                    .column.is-6
+                        h3.dondetitle.has-text-weight-bold.has-text-centered ¿DÓNDE ENCONTRARLO?
+                        .columns.is-multiline.is-vcentered.has-text-centered.is-mobile
+                            - var clientes = []
+                            - clientes.push(['walmart', 'Walmart'])
+                            - clientes.push(['superama', 'Superama'])
+                            - clientes.push(['soriana', 'Soriana'])
+                            - clientes.push(['lacomer', 'LaComer'])
+                            - clientes.push(['fresko', 'Fresko'])
+                            - clientes.push(['chedraui', 'Chedraui'])
+                            - clientes.push(['heb', 'HEB'])
+                            - clientes.push(['sanborns', 'Sanborns'])
+                            - clientes.push(['yza', 'Farmcias Yza'])
+                            - clientes.push(['similares', 'Farmcias Similares'])
+                            - clientes.push(['sanpablo', 'Farmacias San Pablo'])
+                            - clientes.push(['guadalajara', 'Guadalajara Super Farmacia'])
+                            each val in clientes
+                                .column.is-6-mobile.is-4-tablet: img(src='app/img/c/'+val[0]+'.png', alt=val[1])
+                    .column.is-6.has-text-centered
+                        | <div class="fb-page" data-href="https://www.facebook.com/cboostgrisi/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/cboostgrisi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cboostgrisi/">CboostGrisi</a></blockquote></div>
+        section#gallery
+            .columns.is-gapless.is-mobile
+                .column.galitem: img(src="app/img/g/1.jpg", alt="Cboost" data-aos="fade-up")
+                .column.galitem: img(src="app/img/g/2.jpg", alt="Cboost" data-aos="fade-down")
+                .column.galitem: img(src="app/img/g/3.jpg", alt="Cboost" data-aos="fade-up")
+                .column.galitem: img(src="app/img/g/4.jpg", alt="Cboost" data-aos="fade-down")
+                .column.galitem: img(src="app/img/g/5.jpg", alt="Cboost" data-aos="fade-up")
+                .column.galitem: img(src="app/img/g/6.jpg", alt="Cboost" data-aos="fade-down")
+        footer.has-text-centered.is-size-7 2020 © Cboost Grisi
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+        script(src="app/app.js")
